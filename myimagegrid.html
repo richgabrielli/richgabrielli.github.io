@@ -9,7 +9,7 @@
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-rows: repeat(2, 200px);
+    grid-template-rows: repeat(auto-fit, minmax(1fr, 200px));
 }
 .container > div > img {
     width: 100%;
@@ -20,12 +20,10 @@
 <body>
 	<h1>Testing Grid</h1>
 <div class="container">
-	<div><img src="images/HealthKit-Proto.jpg" alt="Raw Data"/><p>First pull of HealthKit raw data.</p></div>
-  <div>2</div>
-  <div>3</div>
-  <div>4</div>
-  <div>5</div>
-  <div>6</div>
+	<div><img src="images/HealthKit-Proto.jpg" alt="Raw Data"/><p>First query of HealthKit raw data.</p></div>
+  	<div><img src="images/HealthKit-Proto3.jpg" alt="Raw Data"/><p>2nd query of HealthKit raw data.</p></div>
+  	<div><img src="images/HealthKit-Proto3.1.jpg" alt="Raw Data"/><p>3rd query of HealthKit raw data.</p></div>
+	<div>4<p>4th query of HealthKit raw data.</p></div>
 </div>	
 
 </body>
